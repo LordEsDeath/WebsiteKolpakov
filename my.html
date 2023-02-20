@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Обо мне</title>
+    <script>
+        window.onload = function(){
+            document.body.style.opacity = 7;
+        };
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 50px;
+        transition: 1s;
+        opacity: 0;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: white;
+      }
+      p {
+        font-size: 18px;
+        margin: 0;
+        color: white;
+      }
+      a{
+      	color:black;
+      	border: solid 1px white;
+      	border-radius: 10px;
+      	background-color: white;
+      }
+      nav{
+      	text-align: center;
+      	font-size: 26px;
+      	margin-top: 60px;
+      	color: white;
+      }
+      .background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background-image: url("sky.jpg");
+        filter: blur(6px);
+      }
+      .main{
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #000000;
+        border: 1px solid #FFFFFF;
+        box-shadow: 15px 10px 10px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+
+      }
+      h1 {
+        font-size: 4vw;
+      }
+      p {
+        font-size: 2vw;
+      }
+      
+      /* Media Queries */
+      @media (max-width: 768px) {
+        /* Adjust font size for smaller screens */
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 16px;
+        }
+        .main{
+        	height: 50%;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        /* Adjust layout for mobile screens */
+        .main {
+          width: 90%;
+          height: 60%;
+          border-radius: 0;
+        }
+        nav {
+          font-size: 22px;
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="main">
+      <h1>Обо мне</h1>
+      <p>Меня зовут Константин Колпаков. Учусь в Ida-virumaa kutsehariduskeskus на профессию Младший специалист по программному обеспечению.На первом курсе мы изучали такие языки программирования как Python, PHP, JavaScript(и язык базы данных SQL) ну и базовые Html и Css. На втором курсе основными языками программирования были PHP(а именно врейм ворки и я очень неплохо при успел в фремворке Laravay), язык java, занимались тестированием, и разрабатывали приложения дря андроид. У меня достаточно много увлечений. Люблю играть в игры, собирать компьютеры, заниматься спортом, так-же в свободное время изучаю Adobe AfterEffect. С детства занимаю фотошопом и видео монтажом.</p>
+      
+
+      <nav>
+
+      	<a href="index.html">Назад</a>
+
+      	<a href="works.html">Примеры работ</a>
+      	
+      	
+      </nav>
+
+    </div>
+  </body>
+</html>
